@@ -1,0 +1,28 @@
+<div>
+    <h1>Bookings</h1>
+            <div class="row">
+                <% bookingList.forEach((booking) => { %>
+                    <div class="card col-sm"><%= booking.Booking %>
+                   
+                        <h4><%= booking.customername %></h4>
+                        <h4><%= booking.room_type %></h4>
+                        <h4><%= booking.dateCheckIn %></h4>
+                        <h4><%= booking.timeCheckIn %></h4>
+                        <h4><%= booking.dateCheckOut %></h4>
+                        <h4><%= booking.timeCheckOut %></h4>
+                        <h4><%= booking.numofpeople %></h4>
+                   
+                        <button><a href="/booking/<%= booking._id %>" class="text-white">Edit</a></buttin>
+                    
+                        <form method="POST" action="/booking/<%= booking.id %>?_method=DELETE">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                <% })%>
+            </div>
+            
+        
+        
+   
+    
+</div>

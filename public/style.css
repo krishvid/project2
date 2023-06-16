@@ -1,0 +1,32 @@
+
+body {
+  
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+h1 {
+  font-family: "Righteous", cursive;
+  background: antiquewhite;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+a {
+  color: orange;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  background: rgba(193, 235, 187, 0.9);
+ 
+}
+input[type="text"] {
+  padding: 0.3em;
+}
+input[type="submit"] {
+  padding: 0.3em;
+  color: orange;
+  background: mediumseagreen;
+  font-size: 1em;
+  border-radius: 10%;
+}

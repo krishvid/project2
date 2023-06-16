@@ -1,0 +1,28 @@
+<h1>Edit booking</h1>
+<form action="/booking/<%= bookingList._id %>?_method=PUT" method="post">
+    <input type="text" name="customername" value="<%= bookingList.customername%>">
+    <label for="roomtype">
+        <select name="roomtype">
+            <option value="single">Single Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="family">Family Room</option>
+        </select>
+    </label>
+    <label for="dateCheckIn">
+        <input type="date" placeholder="dateCheckIn" name="dateCheckIn">
+    </label>
+    <label for="timeCheckIn">
+        <input type="time" placeholder="timeCheckIn" name="timeCheckIn">
+    </label>
+    <label for="dateCheckOut" >
+        <input type="date" placeholder="dateCheckOut" name="dateCheckOut">
+    </label>
+    
+    <label for="timeCheckOut">
+        <input type="time" placeholder="timeCheckOut" name="timeCheckOut">
+    </label>
+    <label for="numofpeople">
+        <input type="number" placeholder="numofpeople" name="numofpeople">
+    </label>
+    <button type="submit">Edit Booking</button>
+    </form>

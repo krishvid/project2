@@ -1,0 +1,30 @@
+<h1>Book Room</h1>
+<form action="/bookroom" method="post">
+    <label for="customername">
+        <input type="text" placeholder="customername" name="customername">
+    </label>
+    <label for="roomtype">
+        <select name="roomtype">
+            <option value="single">Single Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="family">Family Room</option>
+        </select>
+    </label>
+    <label for="dateCheckIn">
+        <input type="date" placeholder="dateCheckIn" name="dateCheckIn">
+    </label>
+    <label for="timeCheckIn">
+        <input type="time" placeholder="timeCheckIn" name="timeCheckIn">
+    </label>
+    <label for="dateCheckOut" >
+        <input type="date" placeholder="dateCheckOut" name="dateCheckOut">
+    </label>
+    
+    <label for="timeCheckOut">
+        <input type="time" placeholder="timeCheckOut" name="timeCheckOut">
+    </label>
+    <label for="numofpeople">
+        <input type="number" placeholder="numofpeople" name="numofpeople">
+    </label>
+    <button type="submit">Book Room</button>
+    </form>
